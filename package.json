@@ -1,5 +1,5 @@
 {
-  "name": "pspdfkit-web-example-react",
+  "name": "pdfkit",
   "version": "2022.2.0",
   "description": "Standalone and offline PDF viewer web application built with PSPDFKit for Web and React",
   "keywords": [
@@ -14,9 +14,9 @@
     "offline",
     "indexeddb"
   ],
-  "author": "PSPDFKit (https://pspdfkit.com)",
-  "homepage": "https://pspdfkit.com",
-  "license": "SEE LICENSE IN https://pspdfkit.com/legal/License.pdf",
+  "author": "ITNLAB",
+  "homepage": "http://markuz899.github.io/pdfkit",
+  "license": "license.pdf",
   "readme": "https://pspdfkit.com/guides/web",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
@@ -35,10 +35,13 @@
     "prebuild": "npm run verify-installation",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
+    "gh-pages": "^3.2.3",
     "ncp": "^2.0.0"
   },
   "browserslist": [
