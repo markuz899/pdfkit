@@ -15,7 +15,7 @@
     "indexeddb"
   ],
   "author": "ITNLAB",
-  "homepage": "http://markuz899.github.io/pdfkit",
+  "homepage": "http://markuz899.github.io",
   "license": "license.pdf",
   "readme": "https://pspdfkit.com/guides/web",
   "dependencies": {
