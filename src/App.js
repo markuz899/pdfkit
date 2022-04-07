@@ -10,10 +10,11 @@ function useQuery() {
 function QueryScreen() {
   let test = "https://centrotest.eu/static/test.pdf";
   let query = useQuery();
-  const [document, setDocument] = useState(query.get("url") || test);
+  let queryUrl = query.get("url");
+  const [document, setDocument] = useState(queryUrl || test);
 
   useEffect(() => {
-    setDocument(query.get("url"));
+    setDocument(queryUrl);
   }, [query.get("url")]);
 
   return (
